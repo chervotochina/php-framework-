@@ -1,7 +1,8 @@
 <?php
 
-function debug($data, $die = false) {
-    echo '<pre>'.print_r($data).'</pre>';
+function debug($data, $die = false)
+{
+    echo '<pre>' . print_r($data, 1) . '</pre>';
     if ($die) {
         die;
     }
