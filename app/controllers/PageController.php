@@ -7,6 +7,6 @@ use wfm\Controller;
 class PageController extends Controller
 {
     public function viewAction() {
-        echo __METHOD__;
+      //  echo __METHOD__;
     }
 }

@@ -2,9 +2,11 @@
 
 namespace app\controllers\admin;
 
-class MainController
+use wfm\Controller;
+
+class MainController extends Controller
 {
     public function indexAction() {
-        echo __METHOD__;
+        echo "<h1>ADMIN AREA</h1>";
     }
 }

@@ -7,7 +7,9 @@ use wfm\Controller;
 
 class MainController extends Controller
 {
+ // public false|string $layout = 'default';
     public function indexAction() {
-        echo __METHOD__;
+      //  $this->layout = 'default';
+     //   echo __METHOD__;
     }
 }
