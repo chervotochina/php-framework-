@@ -44,8 +44,12 @@ class View
                 throw new \Exception('Не найден щаблон '.$layout_file,500);
             }
         }
-
-
+    }
+    public function getMeta(){
+        $out = '<title>'.$this->meta['title'].'</title>'.PHP_EOL;
+        $out .= '<meta name="description" content="'.$this->meta['description'].'">'.PHP_EOL;
+        $out .= '<meta name="keywords" content="'.$this->meta['keywords'].'">'.PHP_EOL;
+        return $out;
 
 
     }
