@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 
+use RedBeanPHP\R;
 use wfm\Controller;
 
 class MainController extends Controller
@@ -15,6 +16,8 @@ class MainController extends Controller
         // $this->set(['test' => 'test var','name' => 'John',]);
 
         $names = ['test' , 'test var','name' , 'John',];
+        $names = R::findAll('name');
+        debug ($names);
         $this->set(['names' => $names]);
         $this->set(compact('names'));
     }
